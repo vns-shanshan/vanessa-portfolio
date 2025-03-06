@@ -1,9 +1,14 @@
-import { Button } from "@/components/ui/button";
+import Navbar from "@/components/features/Navbar";
+import Hero from "@/sections/Hero";
 
 function App() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-svh">
-      <Button variant="link">Click me</Button>
+    <div className="w-full">
+      <Navbar />
+
+      <main className="w-[60%] mx-auto">
+        <Hero />
+      </main>
     </div>
   );
 }

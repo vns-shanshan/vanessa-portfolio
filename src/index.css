@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 @import "tailwindcss";
 /*
 ---break--- */
@@ -6,6 +8,26 @@
 ---break--- */
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --color-primary-light: #faf7f0;
+  --color-secondary-light: #4a4947;
+  --color-accent-light: #4a6473;
+  --color-text-light: #b0b0b0;
+
+  --font-playfair-display: "Playfair Display", serif;
+  --font-dm-sans: "DM Sans", sans-serif;
+
+  --text-3xl: 40px;
+  --text-2xl: 34px;
+  --text-xl: 26px;
+  --text-l: 20px;
+  --text-m: 16px;
+  --text-s: 14px;
+
+  --breakpoint-l: 1024px;
+  --breakpoint-m: 768px;
+  --breakpoint-s: 320px;
+}
 /*
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -80,7 +102,6 @@ button:focus-visible {
 ---break--- */
 
 :root {
-
   --background: oklch(1 0 0);
 
   --foreground: oklch(0.145 0 0);
@@ -152,7 +173,6 @@ button:focus-visible {
 ---break--- */
 
 .dark {
-
   --background: oklch(0.145 0 0);
 
   --foreground: oklch(0.985 0 0);
@@ -222,7 +242,6 @@ button:focus-visible {
 ---break--- */
 
 @theme inline {
-
   --color-background: var(--background);
 
   --color-foreground: var(--foreground);

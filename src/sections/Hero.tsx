@@ -1,0 +1,57 @@
+export default function Hero() {
+  return (
+    <div className="mt-32">
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+      <div>Hero</div>
+    </div>
+  );
+}
