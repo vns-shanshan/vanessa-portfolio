@@ -22,7 +22,7 @@ export default function Navbar() {
     : "bg-secondary-light ";
 
   useEffect(() => {
-    const toggleVisibility = () => {
+    const toggleTransparent = () => {
       if (window.scrollY > 300) {
         setIsTransparent(true);
       } else {
@@ -30,13 +30,13 @@ export default function Navbar() {
       }
     };
 
-    window.addEventListener("scroll", toggleVisibility);
-    return () => window.removeEventListener("scroll", toggleVisibility);
+    window.addEventListener("scroll", toggleTransparent);
+    return () => window.removeEventListener("scroll", toggleTransparent);
   }, []);
 
   return (
     <nav
-      className={`fixed w-full top-0 flex justify-around items-center    ${transparentClass}`}
+      className={`fixed w-full top-0 flex justify-around items-center ${transparentClass}`}
     >
       <div className="my-4">
         <h1 className="text-primary-light font-playfair-display font-bold l:text-3xl m:text-2xl s:text-xl">

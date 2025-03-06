@@ -1,4 +1,4 @@
-import Navbar from "@/components/features/Navbar";
+import Navbar from "@/components/features/Navbar/Navbar";
 import Hero from "@/sections/Hero";
 
 function App() {
