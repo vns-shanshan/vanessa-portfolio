@@ -13,6 +13,7 @@
   --color-secondary-light: #4a4947;
   --color-accent-light: #4a6473;
   --color-text-light: #b0b0b0;
+  --color-text-important-light: #8c8c8c;
 
   --font-playfair-display: "Playfair Display", serif;
   --font-dm-sans: "DM Sans", sans-serif;
@@ -28,6 +29,11 @@
   --breakpoint-m: 768px;
   --breakpoint-s: 320px;
 }
+
+:root {
+  background-color: #faf7f0;
+}
+
 /*
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;

@@ -13,6 +13,14 @@ const sections = [
 ];
 
 export default function Navbar() {
+  const handleScroll = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav
       className={`fixed w-full top-0 flex justify-around items-center bg-secondary-light`}
@@ -25,11 +33,18 @@ export default function Navbar() {
 
       <div className="l:flex m:hidden s:hidden">
         <ul className="flex gap-6 text-primary-light font-dm-sans font-medium text-m">
-          {sections.map((section) => (
-            <button className="cursor-pointer hover:text-accent-light transition">
-              {section}
-            </button>
-          ))}
+          {sections.map((section) => {
+            const sectionId = section.split(" ")[1].toLowerCase();
+
+            return (
+              <button
+                className="cursor-pointer hover:text-accent-light transition"
+                onClick={() => handleScroll(sectionId)}
+              >
+                {section}
+              </button>
+            );
+          })}
         </ul>
       </div>
 
