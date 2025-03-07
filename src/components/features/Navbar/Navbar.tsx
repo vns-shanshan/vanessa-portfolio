@@ -33,11 +33,12 @@ export default function Navbar() {
 
       <div className="l:flex m:hidden s:hidden">
         <ul className="flex gap-6 text-primary-light font-dm-sans font-medium text-m">
-          {sections.map((section) => {
+          {sections.map((section, i) => {
             const sectionId = section.split(" ")[1].toLowerCase();
 
             return (
               <button
+                key={i}
                 className="cursor-pointer hover:text-accent-light transition"
                 onClick={() => handleScroll(sectionId)}
               >

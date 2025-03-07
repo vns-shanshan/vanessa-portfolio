@@ -1,4 +1,6 @@
 import Navbar from "@/components/features/Navbar/Navbar";
+import Certifications from "@/sections/Certifications";
+import Experience from "@/sections/Experience";
 import Hero from "@/sections/Hero";
 import Projects from "@/sections/Projects";
 import Skills from "@/sections/Skills";
@@ -11,7 +13,9 @@ function App() {
       <main className="flex flex-col l:gap-36 gap-20 w-[60%] mx-auto">
         <Hero />
         <Skills />
-        <Projects />
+        {/* <Projects /> */}
+        <Experience />
+        <Certifications />
       </main>
     </div>
   );

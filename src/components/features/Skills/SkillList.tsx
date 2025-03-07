@@ -11,8 +11,8 @@ export default function SkillList({ title, items }: SkillListProps) {
       </h2>
 
       <ul className="flex flex-col l:gap-1.5 gap-1">
-        {items.map((item) => (
-          <li className="text-text-light font-dm-sans l:text-l text-m">
+        {items.map((item, i) => (
+          <li key={i} className="text-text-light font-dm-sans l:text-l text-m">
             {item}
           </li>
         ))}

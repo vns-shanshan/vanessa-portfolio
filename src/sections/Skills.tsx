@@ -52,11 +52,11 @@ export default function Skills() {
       </div>
 
       <div className="flex m:flex-row justify-between flex-col s:gap-4">
-        {categories.map((category, index) => (
+        {categories.map((category, i) => (
           <>
             <SkillList title={category} items={technologies[category]} />
 
-            {index < categories.length - 1 && <Border />}
+            {i < categories.length - 1 && <Border />}
           </>
         ))}
       </div>

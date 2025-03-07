@@ -59,11 +59,11 @@ export default function HamburgerMenu({ sections }: HamburgerMenuProps) {
         {/* Drawer content */}
         <div className="flex justify-center m:mt-26 s:mt-24 p-4">
           <ul className="flex flex-col m:gap-16 s:gap-12 items-start text-primary-light font-dm-sans m:font-medium s:font-normal m:text-l s:text-m">
-            {sections.map((section) => {
+            {sections.map((section, i) => {
               const sectionId = section.split(" ")[1].toLowerCase();
 
               return (
-                <button onClick={() => handleScroll(sectionId)}>
+                <button key={i} onClick={() => handleScroll(sectionId)}>
                   {section}
                 </button>
               );
