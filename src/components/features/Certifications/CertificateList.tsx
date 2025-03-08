@@ -33,7 +33,7 @@ export default function CertificateList({ certificates }: CertificateProps) {
              before:origin-bottom hover:text-primary-light 
              hover:before:h-full"
                 >
-                  <span className="relative z-10 hover:text-primary-light">
+                  <span className="relative hover:text-primary-light">
                     Certificate
                   </span>
                 </a>

@@ -23,7 +23,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed w-full top-0 flex justify-around items-center bg-secondary-light`}
+      className={`fixed w-full top-0 flex justify-around items-center bg-secondary-light z-50`}
     >
       <div className="my-4">
         <h1 className="text-primary-light font-playfair-display font-bold l:text-3xl m:text-2xl s:text-xl">
