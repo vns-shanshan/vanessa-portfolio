@@ -6,6 +6,8 @@ import Hero from "@/sections/Hero";
 import Projects from "@/sections/Projects";
 import Skills from "@/sections/Skills";
 
+import ScrollToTopButton from "@/components/ui/ScrollToTop";
+
 function App() {
   return (
     <div className="w-full bg-primary-light">
@@ -19,6 +21,8 @@ function App() {
         <Certifications />
         <Contact />
       </main>
+
+      <ScrollToTopButton />
     </div>
   );
 }
