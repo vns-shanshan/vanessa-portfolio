@@ -4,7 +4,16 @@ import cashpro from "@/assets/cashpro.png";
 import pinstagram from "@/assets/pinstagram.png";
 import escapegoat from "@/assets/escape-goat.png";
 
-const cardInfos = [
+export interface CardInfosProps {
+  photo: string;
+  title: string;
+  appLink: string;
+  tags: string[];
+  description: string;
+  codeLink: string;
+}
+
+const cardInfos: CardInfosProps[] = [
   {
     photo: cineverse,
     title: "CineVerse",

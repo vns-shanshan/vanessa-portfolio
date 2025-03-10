@@ -1,7 +1,12 @@
 import arrow from "@/assets/arrow.svg";
 import { Badge } from "@/components/ui/badge";
+import { CardInfosProps } from "@/sections/Projects";
 
-export default function Card({ card }) {
+interface CardProp {
+  card: CardInfosProps;
+}
+
+export default function Card({ card }: CardProp) {
   return (
     <div>
       <div className="l:mb-8 mb-6">
