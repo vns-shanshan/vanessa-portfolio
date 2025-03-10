@@ -14,7 +14,7 @@ function App() {
       <main className="flex flex-col l:gap-36 gap-20 w-[60%] mx-auto ">
         <Hero />
         <Skills />
-        {/* <Projects /> */}
+        <Projects />
         <Experience />
         <Certifications />
         <Contact />
