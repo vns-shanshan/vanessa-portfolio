@@ -1,5 +1,5 @@
 import arrow from "@/assets/arrow.svg";
-import { Badge } from "@/components/ui/badge";
+import Badge from "@/components/ui/badge";
 import FullBgBtn from "@/components/ui/FullBgBtn";
 import { CardInfosProps } from "@/sections/Projects";
 
