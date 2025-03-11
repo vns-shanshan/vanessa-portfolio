@@ -18,6 +18,7 @@ const technologies: Technologies = {
     "MUI",
     "Tailwind CSS",
   ],
+  divider1: [],
   Backend: [
     "Python",
     "Express.js",
@@ -26,6 +27,7 @@ const technologies: Technologies = {
     "PostgreSQL",
     "RESTful APIs",
   ],
+  divider2: [],
   Tools: [
     "Git",
     "Vercel",
@@ -52,13 +54,20 @@ export default function Skills() {
       </div>
 
       <div className="flex m:flex-row justify-between flex-col s:gap-4">
-        {categories.map((category, i) => (
-          <>
-            <SkillList title={category} items={technologies[category]} />
-
-            {i < categories.length - 1 && <Border />}
-          </>
-        ))}
+        {categories.map((category, i) => {
+          if ((i + 1) % 2) {
+            // if odd rows
+            return (
+              <SkillList
+                key={i}
+                title={category}
+                items={technologies[category]}
+              />
+            );
+          } else {
+            return <Border key={i} />;
+          }
+        })}
       </div>
     </div>
   );
