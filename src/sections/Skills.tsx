@@ -46,7 +46,7 @@ export default function Skills() {
   return (
     <div id="skills" className="flex flex-col l:gap-8 gap-6">
       <div>
-        <h1 className="font-playfair-display l:text-2xl m:text-xl s:text-l font-semibold text-secondary-light">
+        <h1 className="font-playfair-display l:text-2xl m:text-xl s:text-l font-semibold text-secondary-light dark:text-secondary-dark">
           Skills
         </h1>
       </div>

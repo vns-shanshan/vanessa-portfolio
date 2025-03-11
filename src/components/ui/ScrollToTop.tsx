@@ -26,7 +26,7 @@ function ScrollToTopButton() {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-10 right-10 p-3 bg-primary-dark  transition-transform duration-300 ${
+      className={`fixed bottom-10 right-10 p-3 transition-transform duration-300 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       } hover:-translate-y-2`}
     >

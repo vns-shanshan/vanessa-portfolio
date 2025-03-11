@@ -56,7 +56,7 @@ export default function Projects() {
   return (
     <div id="projects" className="flex flex-col l:gap-12 gap-8">
       <div>
-        <h1 className="text-secondary-light font-semibold font-playfair-display l:text-2xl m:text-xl s:text-l">
+        <h1 className="text-secondary-light dark:text-secondary-dark font-semibold font-playfair-display l:text-2xl m:text-xl s:text-l">
           Projects
         </h1>
       </div>

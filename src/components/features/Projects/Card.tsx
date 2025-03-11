@@ -1,5 +1,6 @@
 import arrow from "@/assets/arrow.svg";
 import { Badge } from "@/components/ui/badge";
+import FullBgBtn from "@/components/ui/FullBgBtn";
 import { CardInfosProps } from "@/sections/Projects";
 
 interface CardProp {
@@ -17,7 +18,7 @@ export default function Card({ card }: CardProp) {
         <div>
           <a
             href={card.appLink}
-            className="group flex items-center gap-2 font-medium transition font-dm-sans text-text-important-light l:text-xl text-l"
+            className="group flex items-center gap-2 font-medium transition font-dm-sans text-text-important-light dark:text-text-important-dark l:text-xl text-l"
           >
             {card.title}
             <span className="pt-0.5 w-5 h-5 transition-transform duration-300 group-hover:translate-x-2">
@@ -31,7 +32,7 @@ export default function Card({ card }: CardProp) {
             <div key={i}>
               <Badge
                 variant="outline"
-                className="border-accent-light !text-accent-light ring-1 ring-accent-light l:text-m text-s"
+                className="border-accent-light dark:border-accent-dark !text-accent-light dark:!text-accent-dark ring-1 ring-accent-light l:text-m text-s"
               >
                 {tag}
               </Badge>
@@ -39,22 +40,12 @@ export default function Card({ card }: CardProp) {
           ))}
         </div>
 
-        <p className="l:w-[80%] w-[100%] text-text-light font-dm-sans text-m/6">
+        <p className="l:w-[80%] w-[100%] text-text-light dark:text-text-dark font-dm-sans text-m/6">
           {card.description}
         </p>
 
         <div>
-          <a
-            href={card.codeLink}
-            className="relative text-accent-light font-dm-sans font-medium l:text-l text-m 
-             underline underline-offset-6 transition-all duration-300 
-             before:absolute before:left-0 before:bottom-0 before:h-0 before:w-full 
-             before:bg-accent-light before:transition-all before:duration-300 
-             before:origin-bottom hover:text-primary-light 
-             hover:before:h-full"
-          >
-            <span className="relative hover:text-primary-light">Github</span>
-          </a>
+          <FullBgBtn href={card.codeLink}>Github</FullBgBtn>
         </div>
       </div>
     </div>

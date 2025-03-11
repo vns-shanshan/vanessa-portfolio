@@ -10,7 +10,7 @@ import ScrollToTopButton from "@/components/ui/ScrollToTop";
 
 function App() {
   return (
-    <div className="w-full bg-primary-light">
+    <div className="w-full bg-primary-light dark:bg-primary-dark">
       <Navbar />
 
       <main className="flex flex-col l:gap-36 gap-20 w-[60%] mx-auto ">

@@ -39,7 +39,7 @@ export default function Experience() {
   return (
     <div id="experience" className="flex flex-col l:gap-8 gap-6">
       <div>
-        <h1 className="text-secondary-light font-semibold font-playfair-display l:text-2xl m:text-xl s:text-l">
+        <h1 className="text-secondary-light dark:text-secondary-dark font-semibold font-playfair-display l:text-2xl m:text-xl s:text-l">
           Experience
         </h1>
       </div>
@@ -49,7 +49,7 @@ export default function Experience() {
       <div>
         <a
           href="/resume.pdf"
-          className="group flex items-center gap-2 transition font-dm-sans text-accent-light l:text-xl text-l"
+          className="group flex items-center gap-2 transition font-dm-sans text-accent-light dark:text-accent-dark  l:text-xl text-l"
         >
           View My Resume
           <span className="pt-0.5 w-5 h-5 transition-transform duration-300 group-hover:translate-x-2">

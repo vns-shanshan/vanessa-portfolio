@@ -38,7 +38,7 @@ export default function Certifications() {
   return (
     <div id="certifications" className="flex flex-col l:gap-8 gap-6">
       <div>
-        <h1 className="text-secondary-light font-semibold font-playfair-display l:text-2xl m:text-xl s:text-l">
+        <h1 className="text-secondary-light dark:text-secondary-dark  font-semibold font-playfair-display l:text-2xl m:text-xl s:text-l">
           Certifications
         </h1>
       </div>

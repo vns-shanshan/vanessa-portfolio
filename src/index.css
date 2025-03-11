@@ -15,6 +15,12 @@
   --color-text-light: #b0b0b0;
   --color-text-important-light: #8c8c8c;
 
+  --color-primary-dark: #192227;
+  --color-secondary-dark: #cac9c4;
+  --color-accent-dark: #6a8ea3;
+  --color-text-dark: #8c8c8c;
+  --color-text-important-dark: #b0b0b0;
+
   --font-playfair-display: "Playfair Display", serif;
   --font-dm-sans: "DM Sans", sans-serif;
 
@@ -179,7 +185,7 @@ button:focus-visible {
 ---break--- */
 
 .dark {
-  --background: oklch(0.145 0 0);
+  /* --background: oklch(0.145 0 0); */
 
   --foreground: oklch(0.985 0 0);
 

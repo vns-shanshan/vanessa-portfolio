@@ -22,12 +22,12 @@ export default function Contact() {
   return (
     <div id="contact" className="flex flex-col l:gap-8 gap-6 m:mb-24 s:mb-16">
       <div>
-        <h1 className="text-secondary-light font-semibold font-playfair-display l:text-2xl m:text-xl s:text-l">
+        <h1 className="text-secondary-light dark:text-secondary-dark font-semibold font-playfair-display l:text-2xl m:text-xl s:text-l">
           Contact
         </h1>
       </div>
 
-      <div className="flex gap-12 font-dm-sans font-medium l:text-l text-m text-text-important-light">
+      <div className="flex gap-12 font-dm-sans font-medium l:text-l text-m text-text-important-light dark:text-text-important-dark">
         {contacts.map((contact, i) => (
           <a
             key={i}
@@ -43,7 +43,7 @@ export default function Contact() {
       </div>
 
       <div>
-        <p className="font-dm-sans font-medium text-s text-text-light">
+        <p className="font-dm-sans font-medium text-s text-text-light dark:text-text-dark">
           Designed & Developed by Huijing Jin 2025
         </p>
       </div>
