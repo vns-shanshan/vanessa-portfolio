@@ -1,4 +1,9 @@
-export default function FullBgBtn({ href, children }) {
+interface FullBgBtnProps {
+  href: string;
+  children: string;
+}
+
+export default function FullBgBtn({ href, children }: FullBgBtnProps) {
   return (
     <a
       href={href}
