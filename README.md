@@ -4,6 +4,13 @@
 
 Welcome to my personal portfolio! This project showcases my skills, experience, and projects in a clean and minimalistic design. It is built using **React** and **Vite**, featuring smooth animations, dark mode support, and responsive navigation.
 
+## Getting Started:
+
+- [Vanessa Portfolio](https://vanessa-portfolio-tawny.vercel.app/)
+
+- [Github](https://github.com/vns-shanshan/vanessa-portfolio)
+- [Figma](https://www.figma.com/design/QefULXuXInzwsYkmzxQ694/Vanessa-Portfolio?node-id=14-86&p=f&t=nVbjPdn773dzzicH-0)
+
 ## Features
 
 - **Responsive Design**: Optimized for different screen sizes.
