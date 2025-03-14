@@ -7,7 +7,7 @@ import escapegoat from "@/assets/escape-goat.png";
 export interface CardInfosProps {
   photo: string;
   title: string;
-  appLink: string;
+  appLink?: string;
   tags: string[];
   description: string;
   codeLink: string;
@@ -35,7 +35,6 @@ const cardInfos: CardInfosProps[] = [
   {
     photo: pinstagram,
     title: "Pinstagram",
-    appLink: "https://pinsta-gram.netlify.app/",
     tags: ["Vite", "Express", "MongoDB", "JWT", "React.js", "Multer"],
     description:
       "Developed a full-stack image-sharing app with a separate frontend and backend architecture, using Express and MongoDB for the backend, React with the Vite build tool for the frontend, and environment variables to link backend endpoints.",

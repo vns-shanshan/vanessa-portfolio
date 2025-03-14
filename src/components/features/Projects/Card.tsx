@@ -16,15 +16,21 @@ export default function Card({ card }: CardProp) {
 
       <div className="flex flex-col gap-4">
         <div>
-          <a
-            href={card.appLink}
-            className="group flex items-center gap-2 font-medium transition font-dm-sans text-text-important-light dark:text-text-important-dark l:text-xl text-l"
-          >
-            {card.title}
-            <span className="pt-0.5 w-5 h-5 transition-transform duration-300 group-hover:translate-x-2">
-              <img alt="arrow-right" src={arrow} />
+          {card.appLink ? (
+            <a
+              href={card.appLink}
+              className="group flex items-center gap-2 font-medium transition font-dm-sans text-text-important-light dark:text-text-important-dark l:text-xl text-l"
+            >
+              {card.title}
+              <span className="pt-0.5 w-5 h-5 transition-transform duration-300 group-hover:translate-x-2">
+                <img alt="arrow-right" src={arrow} />
+              </span>
+            </a>
+          ) : (
+            <span className="font-medium font-dm-sans text-text-important-light dark:text-text-important-dark l:text-xl text-l">
+              {card.title}
             </span>
-          </a>
+          )}
         </div>
 
         <div className="l:w-[80%] w-[100%] flex flex-wrap l:gap-2 gap-1.5">
