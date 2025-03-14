@@ -48,7 +48,7 @@ export default function Experience() {
 
       <div>
         <a
-          href="/resume.pdf"
+          href="/updated-resume.pdf"
           className="group flex items-center gap-2 transition font-dm-sans text-accent-light dark:text-accent-dark  l:text-xl text-l"
         >
           View My Resume
